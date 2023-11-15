@@ -10,7 +10,7 @@ public class UpdateLoggingAspect {
     private static FileWriter fileWriter;
     public static void beforeOnUpdateReceivedAdvice(Update update){
         try {
-            fileWriter = new FileWriter("D:/demo/spring_course/telegram_bot/src/main/resources/logs.txt", true);
+            fileWriter = new FileWriter("D:/demo/spring_course/telegram_converter_bot/src/main/resources/logs.txt", true);
             fileWriter.append(update.getMessage().getFrom().getUserName() + ", "
                     + update.getMessage().getFrom().getFirstName()  + ", "
                     + update.getMessage().getFrom().getLastName() + ": "+ update.getMessage().getText() + "\n");

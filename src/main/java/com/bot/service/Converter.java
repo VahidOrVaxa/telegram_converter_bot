@@ -14,8 +14,8 @@ import java.util.Map;
 
 @Component
 public class Converter {
-//    @Value("${converter.url}")
-    private String URL = "https://www.maib.md/ru/curs-valutar";
+    @Value("${converter.url}")
+    private String URL;
     private final String[] value;
     private Map<String, Currency> courses;
     private String data;
